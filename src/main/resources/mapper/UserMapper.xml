@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.dao.UserMapper">
+
+	<resultMap type="userEntity" id="userMap">
+		<result property="username" column="username"/>
+		<result property="password" column="password"/>
+		<!-- <association property="id"  column="username" select="getUUID"/> -->
+	</resultMap>
+
+
+	<!-- <select id="getUser" resultMap="userMap">
+		select * from "user"
+	</select>
+	
+	<select id="getUUID" resultType="String">
+		select sys_guid() from dual
+	</select> -->
+
+	
+	<insert id="addUser" >
+		insert into "user" (username,password) values ('汉字','密码')
+	</insert>
+
+</mapper>

@@ -1,0 +1,410 @@
+2019-09-26 17:12:08.913  INFO 9400 --- [http-nio-8090-exec-5] com.example.demo.aop.LogAspectJ          : 请求类型 : POST
+2019-09-26 17:12:08.919  INFO 9400 --- [http-nio-8090-exec-5] com.example.demo.aop.LogAspectJ          : 后置通知 : com.example.demo.service.impl.UserServiceImpl.getUser执行结束,返回值为 : [UserDto(username=TEST3, password=TEST3, id=c4ef000abea041ef8ab7c4d487686d30), UserDto(username=TEST3, password=TEST3, id=80a0802da4564d19ba7ca0ef0889bc2a), UserDto(username=TEST3, password=TEST3, id=7c2dbcebcbd449459c005ae10779b687), UserDto(username=TEST3, password=TEST3, id=9d0e566d025e41ac9235d6a2b640154d), UserDto(username=TEST3, password=TEST3, id=41ea9b0e63614172984cb25dde0d5188), UserDto(username=TEST3, password=TEST3, id=28b9bd1d3bd94e6d84d77424aef58ed9), UserDto(username=TEST3, password=TEST3, id=5c4e6c53911b43618f7f5ff48e27b71d), UserDto(username=TEST3, password=TEST3, id=813bf5e04e934bc5b9a47b33f457adaf), UserDto(username=TEST3, password=TEST3, id=2f8b926e06544d989fbe1162a0f4340d), UserDto(username=TEST3, password=TEST3, id=c44fbbed647b4fc694c5a42084d7d4ef), UserDto(username=admin1, password=admin1, id=8b5116caad094358a653ab2612388183), UserDto(username=admin1, password=admin1, id=73c0febd49444b5ea1b6be35feed3c63), UserDto(username=admin1, password=admin1, id=e69f9ce9cdc24fdabd79228e0117c4fc)]
+2019-09-26 17:28:06.613  INFO 9400 --- [RMI TCP Connection(42)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-09-26 17:28:06.616  INFO 9400 --- [RMI TCP Connection(42)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-26 17:28:06.617  INFO 9400 --- [RMI TCP Connection(42)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-09-26 17:28:06.768  INFO 9400 --- [RMI TCP Connection(42)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-09-26 17:28:12.381  INFO 18864 --- [main] c.e.demo.SpringBootDemo1Application      : Starting SpringBootDemo1Application on 白 with PID 18864 (D:\Program\Eclipse\eclipse.old\workSpace\springBootDemo\target\classes started by 10337 in D:\Program\Eclipse\eclipse.old\workSpace\springBootDemo)
+2019-09-26 17:28:12.384  INFO 18864 --- [main] c.e.demo.SpringBootDemo1Application      : No active profile set, falling back to default profiles: default
+2019-09-26 17:28:13.310  INFO 18864 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2019-09-26 17:28:13.327  INFO 18864 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-26 17:28:13.327  INFO 18864 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-09-26 17:28:13.397  INFO 18864 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/demo]   : Initializing Spring embedded WebApplicationContext
+2019-09-26 17:28:13.397  INFO 18864 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 985 ms
+2019-09-26 17:28:13.881  INFO 18864 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-26 17:28:14.194  INFO 18864 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path '/demo'
+2019-09-26 17:28:14.196  INFO 18864 --- [main] c.e.demo.SpringBootDemo1Application      : Started SpringBootDemo1Application in 2.066 seconds (JVM running for 2.66)
+2019-09-26 17:28:29.932  INFO 18864 --- [http-nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/demo]   : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-26 17:28:29.933  INFO 18864 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-09-26 17:28:29.941  INFO 18864 --- [http-nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2019-09-26 17:28:29.972  INFO 18864 --- [http-nio-8090-exec-1] c.e.d.controller.SpringBootController    : 查询人员列表
+2019-09-26 17:28:29.978  INFO 18864 --- [http-nio-8090-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-09-26 17:28:29.980  WARN 18864 --- [http-nio-8090-exec-1] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2019-09-26 17:28:30.055  INFO 18864 --- [http-nio-8090-exec-1] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
+2019-09-26 17:28:30.058  INFO 18864 --- [http-nio-8090-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-09-26 17:28:30.065  INFO 18864 --- [http-nio-8090-exec-1] com.example.demo.aop.LogAspectJ          : 前置通知 : com.example.demo.service.impl.UserServiceImpl.getUser开始执行
+2019-09-26 17:28:30.065  INFO 18864 --- [http-nio-8090-exec-1] com.example.demo.aop.LogAspectJ          : 参数列表 : []
+2019-09-26 17:28:30.065  INFO 18864 --- [http-nio-8090-exec-1] com.example.demo.aop.LogAspectJ          : 请求类型 : POST
+2019-09-26 17:28:30.146  INFO 18864 --- [http-nio-8090-exec-1] com.example.demo.aop.LogAspectJ          : 后置通知 : com.example.demo.service.impl.UserServiceImpl.getUser执行结束,返回值为 : [UserDto(username=TEST3, password=TEST3, id=dea99347647240bf9456d2f21b8a2212), UserDto(username=TEST3, password=TEST3, id=d1749006418641e8896e4d28a13f3b27), UserDto(username=TEST3, password=TEST3, id=0f65c48061324557830ffbf41ac67aca), UserDto(username=TEST3, password=TEST3, id=522644e478274e9aa6fa1f89e7858653), UserDto(username=TEST3, password=TEST3, id=d165302d4e55435880b39bd55d377b71), UserDto(username=TEST3, password=TEST3, id=b7aa877be2d340059e7cc92388d5cd7e), UserDto(username=TEST3, password=TEST3, id=cd6ac1e3064e4bd1b85c3a28ba0dda38), UserDto(username=TEST3, password=TEST3, id=f75cd332ee6d4115b78b028b074e9c6b), UserDto(username=TEST3, password=TEST3, id=b848197a05ab452688bae46c7f21fd19), UserDto(username=TEST3, password=TEST3, id=a84b680cba9d40c2a0533af9d4d48432), UserDto(username=admin1, password=admin1, id=5fe329a41b9d4104ab9f76db29913887), UserDto(username=admin1, password=admin1, id=2f10114af14d4686bf4bca157cc775e7), UserDto(username=admin1, password=admin1, id=d7983db5337849eab5018d9ac4bc89a2)]
+2019-09-26 17:28:34.699  INFO 18864 --- [http-nio-8090-exec-2] c.e.d.controller.SpringBootController    : 查询人员列表
+2019-09-26 17:28:34.700  INFO 18864 --- [http-nio-8090-exec-2] com.example.demo.aop.LogAspectJ          : 前置通知 : com.example.demo.service.impl.UserServiceImpl.getUser开始执行
+2019-09-26 17:28:34.700  INFO 18864 --- [http-nio-8090-exec-2] com.example.demo.aop.LogAspectJ          : 参数列表 : []
+2019-09-26 17:28:34.700  INFO 18864 --- [http-nio-8090-exec-2] com.example.demo.aop.LogAspectJ          : 请求类型 : POST
+2019-09-26 17:28:34.704  INFO 18864 --- [http-nio-8090-exec-2] com.example.demo.aop.LogAspectJ          : 后置通知 : com.example.demo.service.impl.UserServiceImpl.getUser执行结束,返回值为 : [UserDto(username=TEST3, password=TEST3, id=ebd33a123d0c4c588a1587185f4f326a), UserDto(username=TEST3, password=TEST3, id=462159c9c7cc4910a49dab2085a61d8c), UserDto(username=TEST3, password=TEST3, id=0c191a5cef5f4098a974488a0c9a07d1), UserDto(username=TEST3, password=TEST3, id=555d18b605464286acda73932b10809b), UserDto(username=TEST3, password=TEST3, id=211503aee3504c3595014a5ddaf84461), UserDto(username=TEST3, password=TEST3, id=5fd8e758d6244923b589c9089b53c9c0), UserDto(username=TEST3, password=TEST3, id=d0ade469e96740ebbacfc1e2970905fa), UserDto(username=TEST3, password=TEST3, id=8e85b0324c014aa99d35eb3c342365cf), UserDto(username=TEST3, password=TEST3, id=10ca54b50f684b9892a266435f4def94), UserDto(username=TEST3, password=TEST3, id=a34aa4f11a1042609f5c2f5f390f1ccd), UserDto(username=admin1, password=admin1, id=c5918716f8264591914a114011ec4aa5), UserDto(username=admin1, password=admin1, id=55c59680a08842d598b239d6fbaacf44), UserDto(username=admin1, password=admin1, id=157984024ecf4ac4957ca48d567c7d79)]
+2019-09-26 17:28:35.963  INFO 18864 --- [http-nio-8090-exec-3] c.e.d.controller.SpringBootController    : 查询人员列表
+2019-09-26 17:28:35.964  INFO 18864 --- [http-nio-8090-exec-3] com.example.demo.aop.LogAspectJ          : 前置通知 : com.example.demo.service.impl.UserServiceImpl.getUser开始执行
+2019-09-26 17:28:35.964  INFO 18864 --- [http-nio-8090-exec-3] com.example.demo.aop.LogAspectJ          : 参数列表 : []
+2019-09-26 17:28:35.966  INFO 18864 --- [http-nio-8090-exec-3] com.example.demo.aop.LogAspectJ          : 请求类型 : POST
+2019-09-26 17:28:35.967  INFO 18864 --- [http-nio-8090-exec-3] com.example.demo.aop.LogAspectJ          : 后置通知 : com.example.demo.service.impl.UserServiceImpl.getUser执行结束,返回值为 : [UserDto(username=TEST3, password=TEST3, id=91c4998ecf48473bb01f95d82a257617), UserDto(username=TEST3, password=TEST3, id=59ffb1cfbc5c4778970476de4d5ffc98), UserDto(username=TEST3, password=TEST3, id=0bcc208a5ea746e8b1a6c9899549e8f1), UserDto(username=TEST3, password=TEST3, id=1410c438f08d4b94b4c1fb61a0fcea96), UserDto(username=TEST3, password=TEST3, id=d8d942542d9242c5a376ae7233fa6a87), UserDto(username=TEST3, password=TEST3, id=a95b4a30505945bdb3cd605101aeacd4), UserDto(username=TEST3, password=TEST3, id=4d56df0fd6c146349135d02c653ef21c), UserDto(username=TEST3, password=TEST3, id=acc310623b754e7ba474666e97ededb3), UserDto(username=TEST3, password=TEST3, id=b2a01f5a056949a3a12d4ad3c8ecbe7e), UserDto(username=TEST3, password=TEST3, id=a96b47f7364747c3bf94252d3f337849), UserDto(username=admin1, password=admin1, id=09f73ed876fc409390a51b6828958858), UserDto(username=admin1, password=admin1, id=402e27ce0ce240a781edb4ba01fef35a), UserDto(username=admin1, password=admin1, id=43a99fe6ffeb4ba3a95e30641d6a0afa)]
+2019-09-26 17:28:36.913  INFO 18864 --- [http-nio-8090-exec-4] c.e.d.controller.SpringBootController    : 查询人员列表
+2019-09-26 17:28:36.914  INFO 18864 --- [http-nio-8090-exec-4] com.example.demo.aop.LogAspectJ          : 前置通知 : com.example.demo.service.impl.UserServiceImpl.getUser开始执行
+2019-09-26 17:28:36.914  INFO 18864 --- [http-nio-8090-exec-4] com.example.demo.aop.LogAspectJ          : 参数列表 : []
+2019-09-26 17:28:36.914  INFO 18864 --- [http-nio-8090-exec-4] com.example.demo.aop.LogAspectJ          : 请求类型 : POST
+2019-09-26 17:28:36.916  INFO 18864 --- [http-nio-8090-exec-4] com.example.demo.aop.LogAspectJ          : 后置通知 : com.example.demo.service.impl.UserServiceImpl.getUser执行结束,返回值为 : [UserDto(username=TEST3, password=TEST3, id=740b681a2a454f0da44809d31723ee4e), UserDto(username=TEST3, password=TEST3, id=540eb4664ee54c7eb15dbca6c034f4f4), UserDto(username=TEST3, password=TEST3, id=bdeecf91abe643a988979faf96542f04), UserDto(username=TEST3, password=TEST3, id=54b2e7c955064faea28725024ce3134e), UserDto(username=TEST3, password=TEST3, id=4f2632b1f97245d8800970d4905a3a9b), UserDto(username=TEST3, password=TEST3, id=a17610e2bb264526b8d9cb0ff59471c9), UserDto(username=TEST3, password=TEST3, id=eb450a59b3554498aaeadbface5f3fdc), UserDto(username=TEST3, password=TEST3, id=fe9299da01ed4e4cb7f2133777b96e80), UserDto(username=TEST3, password=TEST3, id=1ac51e04d6844264a436b3ce9adac89b), UserDto(username=TEST3, password=TEST3, id=8a7e7debfdca44beb87074c0f2bf4ac3), UserDto(username=admin1, password=admin1, id=7a6cfbfcdc1c4a909df47e4ade87e615), UserDto(username=admin1, password=admin1, id=816593f4e86846328fafb2c11ee8b9d7), UserDto(username=admin1, password=admin1, id=227c5ea9884841999c59d1b5c4597c48)]
+2019-09-26 17:30:55.163  INFO 18864 --- [RMI TCP Connection(15)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-09-26 17:30:55.165  INFO 18864 --- [RMI TCP Connection(15)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-26 17:30:55.166  INFO 18864 --- [RMI TCP Connection(15)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2019-09-26 17:30:55.402  INFO 18864 --- [RMI TCP Connection(15)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2019-09-27 09:30:23.333  INFO 8728 --- [main] c.e.d.SpringBootDemo1Application         : Starting SpringBootDemo1Application on 白 with PID 8728 (D:\Program\Eclipse\eclipse.old\workSpace\springBootDemo\target\classes started by 10337 in D:\Program\Eclipse\eclipse.old\workSpace\springBootDemo)
+2019-09-27 09:30:23.338  INFO 8728 --- [main] c.e.d.SpringBootDemo1Application         : No active profile set, falling back to default profiles: default
+2019-09-27 09:30:24.420  INFO 8728 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8090 (http)
+2019-09-27 09:30:24.441  INFO 8728 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2019-09-27 09:30:24.441  INFO 8728 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-09-27 09:30:24.530  INFO 8728 --- [main] o.a.c.c.C.[.[.[/demo]                    : Initializing Spring embedded WebApplicationContext
+2019-09-27 09:30:24.531  INFO 8728 --- [main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1161 ms
+2019-09-27 09:30:25.120  INFO 8728 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-27 09:30:25.436  INFO 8728 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8090 (http) with context path '/demo'
+2019-09-27 09:30:25.439  INFO 8728 --- [main] c.e.d.SpringBootDemo1Application         : Started SpringBootDemo1Application in 2.484 seconds (JVM running for 3.395)
+2019-09-27 09:36:11.416  INFO 8728 --- [RMI TCP Connection(21)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-09-27 09:36:11.418  INFO 8728 --- [RMI TCP Connection(21)-127.0.0.1] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-27 09:36:17.243  INFO 7324 --- [main] c.e.d.SpringBootDemo1Application         : Starting SpringBootDemo1Application on 白 with PID 7324 (D:\Program\Eclipse\eclipse.old\workSpace\springBootDemo\target\classes started by 10337 in D:\Program\Eclipse\eclipse.old\workSpace\springBootDemo)
+2019-09-27 09:36:17.247  INFO 7324 --- [main] c.e.d.SpringBootDemo1Application         : No active profile set, falling back to default profiles: default
+2019-09-27 09:36:18.118  INFO 7324 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8090 (http)
+2019-09-27 09:36:18.135  INFO 7324 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2019-09-27 09:36:18.136  INFO 7324 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-09-27 09:36:18.199  INFO 7324 --- [main] o.a.c.c.C.[.[.[/demo]                    : Initializing Spring embedded WebApplicationContext
+2019-09-27 09:36:18.199  INFO 7324 --- [main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 925 ms
+2019-09-27 09:36:18.666  INFO 7324 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-27 09:36:18.933  INFO 7324 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8090 (http) with context path '/demo'
+2019-09-27 09:36:18.935  INFO 7324 --- [main] c.e.d.SpringBootDemo1Application         : Started SpringBootDemo1Application in 1.988 seconds (JVM running for 2.728)
+2019-09-27 09:53:36.694  INFO 7324 --- [RMI TCP Connection(46)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-09-27 09:53:36.698  INFO 7324 --- [RMI TCP Connection(46)-127.0.0.1] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-27 09:53:42.628  INFO 4372 --- [main] c.e.demo.SpringBootDemo1Application      : Starting SpringBootDemo1Application on 白 with PID 4372 (D:\Program\Eclipse\eclipse.old\workSpace\springBootDemo\target\classes started by 10337 in D:\Program\Eclipse\eclipse.old\workSpace\springBootDemo)
+2019-09-27 09:53:42.632  INFO 4372 --- [main] c.e.demo.SpringBootDemo1Application      : No active profile set, falling back to default profiles: default
+2019-09-27 09:53:43.551  INFO 4372 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2019-09-27 09:53:43.570  INFO 4372 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-27 09:53:43.570  INFO 4372 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-09-27 09:53:43.643  INFO 4372 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/demo]   : Initializing Spring embedded WebApplicationContext
+2019-09-27 09:53:43.644  INFO 4372 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 982 ms
+2019-09-27 09:53:44.183  INFO 4372 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-27 09:53:44.467  INFO 4372 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path '/demo'
+2019-09-27 09:53:44.470  INFO 4372 --- [main] c.e.demo.SpringBootDemo1Application      : Started SpringBootDemo1Application in 2.099 seconds (JVM running for 2.74)
+2019-09-27 09:57:30.809  INFO 4372 --- [RMI TCP Connection(16)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-09-27 09:57:30.812  INFO 4372 --- [RMI TCP Connection(16)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-27 09:57:36.974  INFO 20236 --- [main] c.e.d.SpringBootDemo1Application         : Starting SpringBootDemo1Application on 白 with PID 20236 (D:\Program\Eclipse\eclipse.old\workSpace\springBootDemo\target\classes started by 10337 in D:\Program\Eclipse\eclipse.old\workSpace\springBootDemo)
+2019-09-27 09:57:36.980  INFO 20236 --- [main] c.e.d.SpringBootDemo1Application         : No active profile set, falling back to default profiles: default
+2019-09-27 09:57:37.922  INFO 20236 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8090 (http)
+2019-09-27 09:57:37.938  INFO 20236 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2019-09-27 09:57:37.939  INFO 20236 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-09-27 09:57:38.004  INFO 20236 --- [main] o.a.c.c.C.[.[.[/demo]                    : Initializing Spring embedded WebApplicationContext
+2019-09-27 09:57:38.005  INFO 20236 --- [main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 995 ms
+2019-09-27 09:57:38.492  INFO 20236 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-27 09:57:38.789  INFO 20236 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8090 (http) with context path '/demo'
+2019-09-27 09:57:38.791  INFO 20236 --- [main] c.e.d.SpringBootDemo1Application         : Started SpringBootDemo1Application in 2.14 seconds (JVM running for 2.901)
+2019-09-27 10:07:49.519  INFO 20236 --- [RMI TCP Connection(28)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-09-27 10:07:49.521  INFO 20236 --- [RMI TCP Connection(28)-127.0.0.1] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-27 10:07:55.678  INFO 14176 --- [main] c.e.d.SpringBootDemo1Application         : Starting SpringBootDemo1Application on 白 with PID 14176 (D:\Program\Eclipse\eclipse.old\workSpace\springBootDemo\target\classes started by 10337 in D:\Program\Eclipse\eclipse.old\workSpace\springBootDemo)
+2019-09-27 10:07:55.683  INFO 14176 --- [main] c.e.d.SpringBootDemo1Application         : No active profile set, falling back to default profiles: default
+2019-09-27 10:07:56.590  INFO 14176 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8090 (http)
+2019-09-27 10:07:56.607  INFO 14176 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2019-09-27 10:07:56.608  INFO 14176 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-09-27 10:07:56.671  INFO 14176 --- [main] o.a.c.c.C.[.[.[/demo]                    : Initializing Spring embedded WebApplicationContext
+2019-09-27 10:07:56.671  INFO 14176 --- [main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 961 ms
+2019-09-27 10:07:57.130  INFO 14176 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-27 10:07:57.402  INFO 14176 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8090 (http) with context path '/demo'
+2019-09-27 10:07:57.404  INFO 14176 --- [main] c.e.d.SpringBootDemo1Application         : Started SpringBootDemo1Application in 2.036 seconds (JVM running for 2.81)
+2019-09-27 10:09:12.437  INFO 14176 --- [RMI TCP Connection(13)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-09-27 10:09:12.440  INFO 14176 --- [RMI TCP Connection(13)-127.0.0.1] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-27 10:49:36.871  INFO 3584 --- [main] c.e.d.SpringBootDemo1Application         : Starting SpringBootDemo1Application on 白 with PID 3584 (D:\Program\Eclipse\eclipse.old\workSpace\springBootDemo\target\classes started by 10337 in D:\Program\Eclipse\eclipse.old\workSpace\springBootDemo)
+2019-09-27 10:49:36.876  INFO 3584 --- [main] c.e.d.SpringBootDemo1Application         : No active profile set, falling back to default profiles: default
+2019-09-27 10:49:37.788  INFO 3584 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8090 (http)
+2019-09-27 10:49:37.805  INFO 3584 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2019-09-27 10:49:37.806  INFO 3584 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-09-27 10:49:38.167  INFO 3584 --- [main] o.a.c.c.C.[.[.[/demo]                    : Initializing Spring embedded WebApplicationContext
+2019-09-27 10:49:38.167  INFO 3584 --- [main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1264 ms
+2019-09-27 10:49:38.653  INFO 3584 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-27 10:49:38.937  INFO 3584 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8090 (http) with context path '/demo'
+2019-09-27 10:49:38.939  INFO 3584 --- [main] c.e.d.SpringBootDemo1Application         : Started SpringBootDemo1Application in 2.369 seconds (JVM running for 4.795)
+2019-09-27 10:51:33.261  INFO 3584 --- [http-nio-8090-exec-1] o.a.c.c.C.[.[.[/demo]                    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-27 10:51:33.261  INFO 3584 --- [http-nio-8090-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2019-09-27 10:51:33.271  INFO 3584 --- [http-nio-8090-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 9 ms
+2019-09-27 10:51:33.292  INFO 3584 --- [http-nio-8090-exec-1] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2019-09-27 10:51:33.295  WARN 3584 --- [http-nio-8090-exec-1] c.z.h.u.DriverDataSource                 : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2019-09-27 10:51:33.438  INFO 3584 --- [http-nio-8090-exec-1] c.z.h.p.PoolBase                         : HikariPool-1 - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
+2019-09-27 10:51:33.442  INFO 3584 --- [http-nio-8090-exec-1] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2019-09-27 10:51:33.447  INFO 3584 --- [http-nio-8090-exec-1] c.e.d.a.LogAspectJ                       : 前置通知 : com.example.demo.service.impl.UserServiceImpl.addUser开始执行
+2019-09-27 10:51:33.448  INFO 3584 --- [http-nio-8090-exec-1] c.e.d.a.LogAspectJ                       : 参数列表 : []
+2019-09-27 10:51:33.448  INFO 3584 --- [http-nio-8090-exec-1] c.e.d.a.LogAspectJ                       : 请求类型 : GET
+2019-09-27 10:51:33.556 ERROR 3584 --- [http-nio-8090-exec-1] c.e.d.a.LogAspectJ                       : 异常通知 : com.example.demo.service.impl.UserServiceImpl.addUser,异常为 : null
+2019-09-27 10:55:37.916  INFO 3584 --- [RMI TCP Connection(19)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-09-27 10:55:37.918  INFO 3584 --- [RMI TCP Connection(19)-127.0.0.1] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-27 10:55:37.919  INFO 3584 --- [RMI TCP Connection(19)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2019-09-27 10:55:38.067  INFO 3584 --- [RMI TCP Connection(19)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2019-09-27 10:55:43.932  INFO 19852 --- [main] c.e.d.SpringBootDemo1Application         : Starting SpringBootDemo1Application on 白 with PID 19852 (D:\Program\Eclipse\eclipse.old\workSpace\springBootDemo\target\classes started by 10337 in D:\Program\Eclipse\eclipse.old\workSpace\springBootDemo)
+2019-09-27 10:55:43.936  INFO 19852 --- [main] c.e.d.SpringBootDemo1Application         : No active profile set, falling back to default profiles: default
+2019-09-27 10:55:44.797  INFO 19852 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8090 (http)
+2019-09-27 10:55:44.813  INFO 19852 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2019-09-27 10:55:44.813  INFO 19852 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-09-27 10:55:44.879  INFO 19852 --- [main] o.a.c.c.C.[.[.[/demo]                    : Initializing Spring embedded WebApplicationContext
+2019-09-27 10:55:44.880  INFO 19852 --- [main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 917 ms
+2019-09-27 10:55:45.336  INFO 19852 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-27 10:55:45.599  INFO 19852 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8090 (http) with context path '/demo'
+2019-09-27 10:55:45.602  INFO 19852 --- [main] c.e.d.SpringBootDemo1Application         : Started SpringBootDemo1Application in 2.007 seconds (JVM running for 2.75)
+2019-09-27 10:55:55.430  INFO 19852 --- [http-nio-8090-exec-1] o.a.c.c.C.[.[.[/demo]                    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-27 10:55:55.430  INFO 19852 --- [http-nio-8090-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2019-09-27 10:55:55.437  INFO 19852 --- [http-nio-8090-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 6 ms
+2019-09-27 10:55:55.457  INFO 19852 --- [http-nio-8090-exec-1] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2019-09-27 10:55:55.458  WARN 19852 --- [http-nio-8090-exec-1] c.z.h.u.DriverDataSource                 : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2019-09-27 10:55:55.529  INFO 19852 --- [http-nio-8090-exec-1] c.z.h.p.PoolBase                         : HikariPool-1 - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
+2019-09-27 10:55:55.532  INFO 19852 --- [http-nio-8090-exec-1] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2019-09-27 10:55:55.538  INFO 19852 --- [http-nio-8090-exec-1] c.e.d.a.LogAspectJ                       : 前置通知 : com.example.demo.service.impl.UserServiceImpl.addUser开始执行
+2019-09-27 10:55:55.539  INFO 19852 --- [http-nio-8090-exec-1] c.e.d.a.LogAspectJ                       : 参数列表 : []
+2019-09-27 10:55:55.539  INFO 19852 --- [http-nio-8090-exec-1] c.e.d.a.LogAspectJ                       : 请求类型 : GET
+2019-09-27 10:55:55.602 ERROR 19852 --- [http-nio-8090-exec-1] c.e.d.a.LogAspectJ                       : 异常通知 : com.example.demo.service.impl.UserServiceImpl.addUser,异常为 : null
+2019-09-27 10:57:18.679  INFO 19852 --- [RMI TCP Connection(12)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-09-27 10:57:18.681  INFO 19852 --- [RMI TCP Connection(12)-127.0.0.1] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-27 10:57:18.682  INFO 19852 --- [RMI TCP Connection(12)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2019-09-27 10:57:18.830  INFO 19852 --- [RMI TCP Connection(12)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2019-09-27 10:57:24.606  INFO 2736 --- [main] c.e.d.SpringBootDemo1Application         : Starting SpringBootDemo1Application on 白 with PID 2736 (D:\Program\Eclipse\eclipse.old\workSpace\springBootDemo\target\classes started by 10337 in D:\Program\Eclipse\eclipse.old\workSpace\springBootDemo)
+2019-09-27 10:57:24.610  INFO 2736 --- [main] c.e.d.SpringBootDemo1Application         : No active profile set, falling back to default profiles: default
+2019-09-27 10:57:25.465  INFO 2736 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8090 (http)
+2019-09-27 10:57:25.482  INFO 2736 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2019-09-27 10:57:25.483  INFO 2736 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-09-27 10:57:25.548  INFO 2736 --- [main] o.a.c.c.C.[.[.[/demo]                    : Initializing Spring embedded WebApplicationContext
+2019-09-27 10:57:25.548  INFO 2736 --- [main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 912 ms
+2019-09-27 10:57:26.016  INFO 2736 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-27 10:57:26.284  INFO 2736 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8090 (http) with context path '/demo'
+2019-09-27 10:57:26.287  INFO 2736 --- [main] c.e.d.SpringBootDemo1Application         : Started SpringBootDemo1Application in 1.978 seconds (JVM running for 2.713)
+2019-09-27 10:57:31.872  INFO 2736 --- [http-nio-8090-exec-1] o.a.c.c.C.[.[.[/demo]                    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-27 10:57:31.873  INFO 2736 --- [http-nio-8090-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2019-09-27 10:57:31.879  INFO 2736 --- [http-nio-8090-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 6 ms
+2019-09-27 10:57:31.899  INFO 2736 --- [http-nio-8090-exec-1] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2019-09-27 10:57:31.901  WARN 2736 --- [http-nio-8090-exec-1] c.z.h.u.DriverDataSource                 : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2019-09-27 10:57:31.979  INFO 2736 --- [http-nio-8090-exec-1] c.z.h.p.PoolBase                         : HikariPool-1 - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
+2019-09-27 10:57:31.983  INFO 2736 --- [http-nio-8090-exec-1] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2019-09-27 10:57:31.992  INFO 2736 --- [http-nio-8090-exec-1] c.e.d.a.LogAspectJ                       : 前置通知 : com.example.demo.service.impl.UserServiceImpl.addUser开始执行
+2019-09-27 10:57:31.993  INFO 2736 --- [http-nio-8090-exec-1] c.e.d.a.LogAspectJ                       : 参数列表 : []
+2019-09-27 10:57:31.993  INFO 2736 --- [http-nio-8090-exec-1] c.e.d.a.LogAspectJ                       : 请求类型 : GET
+2019-09-27 10:57:32.066 ERROR 2736 --- [http-nio-8090-exec-1] c.e.d.a.LogAspectJ                       : 异常通知 : com.example.demo.service.impl.UserServiceImpl.addUser,异常为 : 空指针异常
+2019-09-27 10:59:51.281  INFO 2736 --- [RMI TCP Connection(15)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-09-27 10:59:51.283  INFO 2736 --- [RMI TCP Connection(15)-127.0.0.1] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-27 10:59:51.284  INFO 2736 --- [RMI TCP Connection(15)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2019-09-27 10:59:51.331  INFO 2736 --- [RMI TCP Connection(15)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2019-09-27 10:59:57.279  INFO 7808 --- [main] c.e.d.SpringBootDemo1Application         : Starting SpringBootDemo1Application on 白 with PID 7808 (D:\Program\Eclipse\eclipse.old\workSpace\springBootDemo\target\classes started by 10337 in D:\Program\Eclipse\eclipse.old\workSpace\springBootDemo)
+2019-09-27 10:59:57.284  INFO 7808 --- [main] c.e.d.SpringBootDemo1Application         : No active profile set, falling back to default profiles: default
+2019-09-27 10:59:58.140  INFO 7808 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8090 (http)
+2019-09-27 10:59:58.157  INFO 7808 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2019-09-27 10:59:58.158  INFO 7808 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-09-27 10:59:58.220  INFO 7808 --- [main] o.a.c.c.C.[.[.[/demo]                    : Initializing Spring embedded WebApplicationContext
+2019-09-27 10:59:58.221  INFO 7808 --- [main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 909 ms
+2019-09-27 10:59:58.675  INFO 7808 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-27 10:59:58.941  INFO 7808 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8090 (http) with context path '/demo'
+2019-09-27 10:59:58.944  INFO 7808 --- [main] c.e.d.SpringBootDemo1Application         : Started SpringBootDemo1Application in 1.975 seconds (JVM running for 2.708)
+2019-09-27 11:12:01.008  INFO 7808 --- [RMI TCP Connection(32)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-09-27 11:12:01.010  INFO 7808 --- [RMI TCP Connection(32)-127.0.0.1] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-27 11:12:06.908  INFO 19712 --- [main] c.e.d.SpringBootDemo1Application         : Starting SpringBootDemo1Application on 白 with PID 19712 (D:\Program\Eclipse\eclipse.old\workSpace\springBootDemo\target\classes started by 10337 in D:\Program\Eclipse\eclipse.old\workSpace\springBootDemo)
+2019-09-27 11:12:06.913  INFO 19712 --- [main] c.e.d.SpringBootDemo1Application         : No active profile set, falling back to default profiles: default
+2019-09-27 11:12:07.785  INFO 19712 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8090 (http)
+2019-09-27 11:12:07.803  INFO 19712 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2019-09-27 11:12:07.804  INFO 19712 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-09-27 11:12:07.873  INFO 19712 --- [main] o.a.c.c.C.[.[.[/demo]                    : Initializing Spring embedded WebApplicationContext
+2019-09-27 11:12:07.873  INFO 19712 --- [main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 933 ms
+2019-09-27 11:12:08.347  INFO 19712 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-27 11:12:08.654  INFO 19712 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8090 (http) with context path '/demo'
+2019-09-27 11:12:08.657  INFO 19712 --- [main] c.e.d.SpringBootDemo1Application         : Started SpringBootDemo1Application in 2.053 seconds (JVM running for 2.827)
+2019-09-27 11:12:12.052  INFO 19712 --- [http-nio-8090-exec-1] o.a.c.c.C.[.[.[/demo]                    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-27 11:12:12.053  INFO 19712 --- [http-nio-8090-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2019-09-27 11:12:12.059  INFO 19712 --- [http-nio-8090-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 6 ms
+2019-09-27 11:12:12.078  INFO 19712 --- [http-nio-8090-exec-1] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2019-09-27 11:12:12.079  WARN 19712 --- [http-nio-8090-exec-1] c.z.h.u.DriverDataSource                 : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2019-09-27 11:12:12.204  INFO 19712 --- [http-nio-8090-exec-1] c.z.h.p.PoolBase                         : HikariPool-1 - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
+2019-09-27 11:12:12.208  INFO 19712 --- [http-nio-8090-exec-1] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2019-09-27 11:12:12.214  INFO 19712 --- [http-nio-8090-exec-1] c.e.d.a.LogAspectJ                       : 前置通知 : com.example.demo.service.impl.UserServiceImpl.addUser开始执行
+2019-09-27 11:12:12.214  INFO 19712 --- [http-nio-8090-exec-1] c.e.d.a.LogAspectJ                       : 参数列表 : []
+2019-09-27 11:12:12.214  INFO 19712 --- [http-nio-8090-exec-1] c.e.d.a.LogAspectJ                       : 请求类型 : GET
+2019-09-27 11:12:12.273 ERROR 19712 --- [http-nio-8090-exec-1] c.e.d.a.LogAspectJ                       : 异常通知 : com.example.demo.service.impl.UserServiceImpl.addUser,异常为 : 空指针异常
+2019-09-27 11:13:36.607  INFO 19712 --- [RMI TCP Connection(11)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-09-27 11:13:36.609  INFO 19712 --- [RMI TCP Connection(11)-127.0.0.1] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-27 11:13:36.610  INFO 19712 --- [RMI TCP Connection(11)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2019-09-27 11:13:36.750  INFO 19712 --- [RMI TCP Connection(11)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2019-09-27 11:13:42.635  INFO 12880 --- [main] c.e.d.SpringBootDemo1Application         : Starting SpringBootDemo1Application on 白 with PID 12880 (D:\Program\Eclipse\eclipse.old\workSpace\springBootDemo\target\classes started by 10337 in D:\Program\Eclipse\eclipse.old\workSpace\springBootDemo)
+2019-09-27 11:13:42.640  INFO 12880 --- [main] c.e.d.SpringBootDemo1Application         : No active profile set, falling back to default profiles: default
+2019-09-27 11:13:43.500  INFO 12880 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8090 (http)
+2019-09-27 11:13:43.516  INFO 12880 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2019-09-27 11:13:43.517  INFO 12880 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-09-27 11:13:43.586  INFO 12880 --- [main] o.a.c.c.C.[.[.[/demo]                    : Initializing Spring embedded WebApplicationContext
+2019-09-27 11:13:43.586  INFO 12880 --- [main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 919 ms
+2019-09-27 11:13:44.144  INFO 12880 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-27 11:13:44.439  INFO 12880 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8090 (http) with context path '/demo'
+2019-09-27 11:13:44.442  INFO 12880 --- [main] c.e.d.SpringBootDemo1Application         : Started SpringBootDemo1Application in 2.155 seconds (JVM running for 2.924)
+2019-09-27 11:13:52.145  INFO 12880 --- [http-nio-8090-exec-1] o.a.c.c.C.[.[.[/demo]                    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-27 11:13:52.145  INFO 12880 --- [http-nio-8090-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2019-09-27 11:13:52.153  INFO 12880 --- [http-nio-8090-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 8 ms
+2019-09-27 11:13:52.172  INFO 12880 --- [http-nio-8090-exec-1] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2019-09-27 11:13:52.174  WARN 12880 --- [http-nio-8090-exec-1] c.z.h.u.DriverDataSource                 : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2019-09-27 11:13:52.245  INFO 12880 --- [http-nio-8090-exec-1] c.z.h.p.PoolBase                         : HikariPool-1 - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
+2019-09-27 11:13:52.249  INFO 12880 --- [http-nio-8090-exec-1] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2019-09-27 11:13:52.254  INFO 12880 --- [http-nio-8090-exec-1] c.e.d.a.LogAspectJ                       : 前置通知 : com.example.demo.service.impl.UserServiceImpl.addUser开始执行
+2019-09-27 11:13:52.255  INFO 12880 --- [http-nio-8090-exec-1] c.e.d.a.LogAspectJ                       : 参数列表 : []
+2019-09-27 11:13:52.255  INFO 12880 --- [http-nio-8090-exec-1] c.e.d.a.LogAspectJ                       : 请求类型 : GET
+2019-09-27 11:13:52.315 ERROR 12880 --- [http-nio-8090-exec-1] c.e.d.a.LogAspectJ                       : 异常通知 : com.example.demo.service.impl.UserServiceImpl.addUser,异常为 : 空指针异常
+2019-09-27 11:28:35.580  INFO 12880 --- [RMI TCP Connection(40)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-09-27 11:28:35.583  INFO 12880 --- [RMI TCP Connection(40)-127.0.0.1] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-27 11:28:35.585  INFO 12880 --- [RMI TCP Connection(40)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2019-09-27 11:28:35.610  INFO 12880 --- [RMI TCP Connection(40)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2019-09-27 11:28:41.681  INFO 9844 --- [main] c.e.d.SpringBootDemo1Application         : Starting SpringBootDemo1Application on 白 with PID 9844 (D:\Program\Eclipse\eclipse.old\workSpace\springBootDemo\target\classes started by 10337 in D:\Program\Eclipse\eclipse.old\workSpace\springBootDemo)
+2019-09-27 11:28:41.687  INFO 9844 --- [main] c.e.d.SpringBootDemo1Application         : No active profile set, falling back to default profiles: default
+2019-09-27 11:28:42.722  INFO 9844 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8090 (http)
+2019-09-27 11:28:42.742  INFO 9844 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2019-09-27 11:28:42.742  INFO 9844 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-09-27 11:28:42.824  INFO 9844 --- [main] o.a.c.c.C.[.[.[/demo]                    : Initializing Spring embedded WebApplicationContext
+2019-09-27 11:28:42.824  INFO 9844 --- [main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1104 ms
+2019-09-27 11:28:43.436  INFO 9844 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-27 11:28:43.766  INFO 9844 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8090 (http) with context path '/demo'
+2019-09-27 11:28:43.770  INFO 9844 --- [main] c.e.d.SpringBootDemo1Application         : Started SpringBootDemo1Application in 2.452 seconds (JVM running for 3.308)
+2019-09-27 11:28:52.339  INFO 9844 --- [http-nio-8090-exec-1] o.a.c.c.C.[.[.[/demo]                    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-27 11:28:52.339  INFO 9844 --- [http-nio-8090-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2019-09-27 11:28:52.346  INFO 9844 --- [http-nio-8090-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 7 ms
+2019-09-27 11:28:52.367  INFO 9844 --- [http-nio-8090-exec-1] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2019-09-27 11:28:52.368  WARN 9844 --- [http-nio-8090-exec-1] c.z.h.u.DriverDataSource                 : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2019-09-27 11:28:52.443  INFO 9844 --- [http-nio-8090-exec-1] c.z.h.p.PoolBase                         : HikariPool-1 - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
+2019-09-27 11:28:52.447  INFO 9844 --- [http-nio-8090-exec-1] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2019-09-27 11:28:52.454  INFO 9844 --- [http-nio-8090-exec-1] c.e.d.a.LogAspectJ                       : 前置通知 : com.example.demo.service.impl.UserServiceImpl.addUser开始执行
+2019-09-27 11:28:52.454  INFO 9844 --- [http-nio-8090-exec-1] c.e.d.a.LogAspectJ                       : 参数列表 : []
+2019-09-27 11:28:52.454  INFO 9844 --- [http-nio-8090-exec-1] c.e.d.a.LogAspectJ                       : 请求类型 : GET
+2019-09-27 11:28:52.524 ERROR 9844 --- [http-nio-8090-exec-1] c.e.d.a.LogAspectJ                       : 异常通知 : com.example.demo.service.impl.UserServiceImpl.addUser,异常为 : null
+2019-09-27 11:30:32.558  INFO 9844 --- [RMI TCP Connection(13)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-09-27 11:30:32.559  INFO 9844 --- [RMI TCP Connection(13)-127.0.0.1] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-27 11:30:32.560  INFO 9844 --- [RMI TCP Connection(13)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2019-09-27 11:30:32.579  INFO 9844 --- [RMI TCP Connection(13)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2019-09-27 11:30:38.407  INFO 19036 --- [main] c.e.d.SpringBootDemo1Application         : Starting SpringBootDemo1Application on 白 with PID 19036 (D:\Program\Eclipse\eclipse.old\workSpace\springBootDemo\target\classes started by 10337 in D:\Program\Eclipse\eclipse.old\workSpace\springBootDemo)
+2019-09-27 11:30:38.411  INFO 19036 --- [main] c.e.d.SpringBootDemo1Application         : No active profile set, falling back to default profiles: default
+2019-09-27 11:30:39.283  INFO 19036 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8090 (http)
+2019-09-27 11:30:39.299  INFO 19036 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2019-09-27 11:30:39.300  INFO 19036 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-09-27 11:30:39.365  INFO 19036 --- [main] o.a.c.c.C.[.[.[/demo]                    : Initializing Spring embedded WebApplicationContext
+2019-09-27 11:30:39.365  INFO 19036 --- [main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 928 ms
+2019-09-27 11:30:39.851  INFO 19036 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-27 11:30:40.131  INFO 19036 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8090 (http) with context path '/demo'
+2019-09-27 11:30:40.133  INFO 19036 --- [main] c.e.d.SpringBootDemo1Application         : Started SpringBootDemo1Application in 2.029 seconds (JVM running for 2.787)
+2019-09-27 11:31:14.897  INFO 19036 --- [RMI TCP Connection(7)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-09-27 11:31:14.899  INFO 19036 --- [RMI TCP Connection(7)-127.0.0.1] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-27 11:31:20.700  INFO 13228 --- [main] c.e.d.SpringBootDemo1Application         : Starting SpringBootDemo1Application on 白 with PID 13228 (D:\Program\Eclipse\eclipse.old\workSpace\springBootDemo\target\classes started by 10337 in D:\Program\Eclipse\eclipse.old\workSpace\springBootDemo)
+2019-09-27 11:31:20.704  INFO 13228 --- [main] c.e.d.SpringBootDemo1Application         : No active profile set, falling back to default profiles: default
+2019-09-27 11:31:21.582  INFO 13228 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8090 (http)
+2019-09-27 11:31:21.601  INFO 13228 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2019-09-27 11:31:21.601  INFO 13228 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-09-27 11:31:21.670  INFO 13228 --- [main] o.a.c.c.C.[.[.[/demo]                    : Initializing Spring embedded WebApplicationContext
+2019-09-27 11:31:21.671  INFO 13228 --- [main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 939 ms
+2019-09-27 11:31:22.152  INFO 13228 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-27 11:31:22.422  INFO 13228 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8090 (http) with context path '/demo'
+2019-09-27 11:31:22.424  INFO 13228 --- [main] c.e.d.SpringBootDemo1Application         : Started SpringBootDemo1Application in 2.024 seconds (JVM running for 2.759)
+2019-09-27 11:31:25.593  INFO 13228 --- [http-nio-8090-exec-1] o.a.c.c.C.[.[.[/demo]                    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-27 11:31:25.594  INFO 13228 --- [http-nio-8090-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2019-09-27 11:31:25.601  INFO 13228 --- [http-nio-8090-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 7 ms
+2019-09-27 11:31:25.621  INFO 13228 --- [http-nio-8090-exec-1] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2019-09-27 11:31:25.622  WARN 13228 --- [http-nio-8090-exec-1] c.z.h.u.DriverDataSource                 : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2019-09-27 11:31:25.691  INFO 13228 --- [http-nio-8090-exec-1] c.z.h.p.PoolBase                         : HikariPool-1 - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
+2019-09-27 11:31:25.694  INFO 13228 --- [http-nio-8090-exec-1] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2019-09-27 11:31:25.700  INFO 13228 --- [http-nio-8090-exec-1] c.e.d.a.LogAspectJ                       : 前置通知 : com.example.demo.service.impl.UserServiceImpl.addUser开始执行
+2019-09-27 11:31:25.700  INFO 13228 --- [http-nio-8090-exec-1] c.e.d.a.LogAspectJ                       : 参数列表 : []
+2019-09-27 11:31:25.700  INFO 13228 --- [http-nio-8090-exec-1] c.e.d.a.LogAspectJ                       : 请求类型 : GET
+2019-09-27 11:31:25.761 ERROR 13228 --- [http-nio-8090-exec-1] c.e.d.a.LogAspectJ                       : 异常通知 : com.example.demo.service.impl.UserServiceImpl.addUser,异常为 : null
+2019-09-27 11:32:13.020  INFO 13228 --- [RMI TCP Connection(11)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-09-27 11:32:13.023  INFO 13228 --- [RMI TCP Connection(11)-127.0.0.1] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-27 11:32:13.024  INFO 13228 --- [RMI TCP Connection(11)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2019-09-27 11:32:13.179  INFO 13228 --- [RMI TCP Connection(11)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2019-09-27 11:32:19.064  INFO 8312 --- [main] c.e.d.SpringBootDemo1Application         : Starting SpringBootDemo1Application on 白 with PID 8312 (D:\Program\Eclipse\eclipse.old\workSpace\springBootDemo\target\classes started by 10337 in D:\Program\Eclipse\eclipse.old\workSpace\springBootDemo)
+2019-09-27 11:32:19.069  INFO 8312 --- [main] c.e.d.SpringBootDemo1Application         : No active profile set, falling back to default profiles: default
+2019-09-27 11:32:19.958  INFO 8312 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8090 (http)
+2019-09-27 11:32:19.975  INFO 8312 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2019-09-27 11:32:19.975  INFO 8312 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-09-27 11:32:20.043  INFO 8312 --- [main] o.a.c.c.C.[.[.[/demo]                    : Initializing Spring embedded WebApplicationContext
+2019-09-27 11:32:20.043  INFO 8312 --- [main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 944 ms
+2019-09-27 11:32:20.514  INFO 8312 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-27 11:32:20.782  INFO 8312 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8090 (http) with context path '/demo'
+2019-09-27 11:32:20.784  INFO 8312 --- [main] c.e.d.SpringBootDemo1Application         : Started SpringBootDemo1Application in 2.023 seconds (JVM running for 2.816)
+2019-09-27 11:32:24.526  INFO 8312 --- [http-nio-8090-exec-1] o.a.c.c.C.[.[.[/demo]                    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-27 11:32:24.526  INFO 8312 --- [http-nio-8090-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2019-09-27 11:32:24.533  INFO 8312 --- [http-nio-8090-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 7 ms
+2019-09-27 11:32:24.551  INFO 8312 --- [http-nio-8090-exec-1] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2019-09-27 11:32:24.553  WARN 8312 --- [http-nio-8090-exec-1] c.z.h.u.DriverDataSource                 : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2019-09-27 11:32:24.625  INFO 8312 --- [http-nio-8090-exec-1] c.z.h.p.PoolBase                         : HikariPool-1 - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
+2019-09-27 11:32:24.628  INFO 8312 --- [http-nio-8090-exec-1] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2019-09-27 11:32:24.634  INFO 8312 --- [http-nio-8090-exec-1] c.e.d.a.LogAspectJ                       : 前置通知 : com.example.demo.service.impl.UserServiceImpl.addUser开始执行
+2019-09-27 11:32:24.635  INFO 8312 --- [http-nio-8090-exec-1] c.e.d.a.LogAspectJ                       : 参数列表 : []
+2019-09-27 11:32:24.635  INFO 8312 --- [http-nio-8090-exec-1] c.e.d.a.LogAspectJ                       : 请求类型 : GET
+2019-09-27 11:32:24.694 ERROR 8312 --- [http-nio-8090-exec-1] c.e.d.a.LogAspectJ                       : 异常通知 : com.example.demo.service.impl.UserServiceImpl.addUser,异常为 : null
+2019-09-27 11:34:13.072  INFO 8312 --- [RMI TCP Connection(12)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-09-27 11:34:13.074  INFO 8312 --- [RMI TCP Connection(12)-127.0.0.1] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-27 11:34:13.075  INFO 8312 --- [RMI TCP Connection(12)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2019-09-27 11:34:13.149  INFO 8312 --- [RMI TCP Connection(12)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2019-09-27 11:34:18.980  INFO 15720 --- [main] c.e.d.SpringBootDemo1Application         : Starting SpringBootDemo1Application on 白 with PID 15720 (D:\Program\Eclipse\eclipse.old\workSpace\springBootDemo\target\classes started by 10337 in D:\Program\Eclipse\eclipse.old\workSpace\springBootDemo)
+2019-09-27 11:34:18.984  INFO 15720 --- [main] c.e.d.SpringBootDemo1Application         : No active profile set, falling back to default profiles: default
+2019-09-27 11:34:19.848  INFO 15720 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8090 (http)
+2019-09-27 11:34:19.864  INFO 15720 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2019-09-27 11:34:19.865  INFO 15720 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-09-27 11:34:19.932  INFO 15720 --- [main] o.a.c.c.C.[.[.[/demo]                    : Initializing Spring embedded WebApplicationContext
+2019-09-27 11:34:19.933  INFO 15720 --- [main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 922 ms
+2019-09-27 11:34:20.446  INFO 15720 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-27 11:34:20.717  INFO 15720 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8090 (http) with context path '/demo'
+2019-09-27 11:34:20.720  INFO 15720 --- [main] c.e.d.SpringBootDemo1Application         : Started SpringBootDemo1Application in 2.043 seconds (JVM running for 2.784)
+2019-09-27 11:34:43.304  INFO 15720 --- [RMI TCP Connection(8)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-09-27 11:34:43.307  INFO 15720 --- [RMI TCP Connection(8)-127.0.0.1] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-27 11:34:49.131  INFO 3276 --- [main] c.e.d.SpringBootDemo1Application         : Starting SpringBootDemo1Application on 白 with PID 3276 (D:\Program\Eclipse\eclipse.old\workSpace\springBootDemo\target\classes started by 10337 in D:\Program\Eclipse\eclipse.old\workSpace\springBootDemo)
+2019-09-27 11:34:49.135  INFO 3276 --- [main] c.e.d.SpringBootDemo1Application         : No active profile set, falling back to default profiles: default
+2019-09-27 11:34:50.006  INFO 3276 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8090 (http)
+2019-09-27 11:34:50.023  INFO 3276 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2019-09-27 11:34:50.023  INFO 3276 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-09-27 11:34:50.091  INFO 3276 --- [main] o.a.c.c.C.[.[.[/demo]                    : Initializing Spring embedded WebApplicationContext
+2019-09-27 11:34:50.091  INFO 3276 --- [main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 930 ms
+2019-09-27 11:34:50.551  INFO 3276 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-27 11:34:50.821  INFO 3276 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8090 (http) with context path '/demo'
+2019-09-27 11:34:50.823  INFO 3276 --- [main] c.e.d.SpringBootDemo1Application         : Started SpringBootDemo1Application in 1.992 seconds (JVM running for 2.728)
+2019-09-27 11:34:55.084  INFO 3276 --- [http-nio-8090-exec-1] o.a.c.c.C.[.[.[/demo]                    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-27 11:34:55.084  INFO 3276 --- [http-nio-8090-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2019-09-27 11:34:55.092  INFO 3276 --- [http-nio-8090-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 8 ms
+2019-09-27 11:34:55.112  INFO 3276 --- [http-nio-8090-exec-1] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2019-09-27 11:34:55.113  WARN 3276 --- [http-nio-8090-exec-1] c.z.h.u.DriverDataSource                 : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2019-09-27 11:34:55.203  INFO 3276 --- [http-nio-8090-exec-1] c.z.h.p.PoolBase                         : HikariPool-1 - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
+2019-09-27 11:34:55.207  INFO 3276 --- [http-nio-8090-exec-1] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2019-09-27 11:34:55.213  INFO 3276 --- [http-nio-8090-exec-1] c.e.d.a.LogAspectJ                       : 前置通知 : com.example.demo.service.impl.UserServiceImpl.addUser开始执行
+2019-09-27 11:34:55.213  INFO 3276 --- [http-nio-8090-exec-1] c.e.d.a.LogAspectJ                       : 参数列表 : []
+2019-09-27 11:34:55.213  INFO 3276 --- [http-nio-8090-exec-1] c.e.d.a.LogAspectJ                       : 请求类型 : GET
+2019-09-27 11:34:55.272  INFO 3276 --- [http-nio-8090-exec-1] c.e.d.a.LogAspectJ                       : 后置通知 : com.example.demo.service.impl.UserServiceImpl.addUser执行结束,返回值为 : 
+2019-09-27 11:35:12.548  INFO 3276 --- [http-nio-8090-exec-3] c.e.d.a.LogAspectJ                       : 前置通知 : com.example.demo.service.impl.UserServiceImpl.addUser开始执行
+2019-09-27 11:35:12.548  INFO 3276 --- [http-nio-8090-exec-3] c.e.d.a.LogAspectJ                       : 参数列表 : []
+2019-09-27 11:35:12.549  INFO 3276 --- [http-nio-8090-exec-3] c.e.d.a.LogAspectJ                       : 请求类型 : GET
+2019-09-27 11:35:12.549  INFO 3276 --- [http-nio-8090-exec-3] c.e.d.a.LogAspectJ                       : 后置通知 : com.example.demo.service.impl.UserServiceImpl.addUser执行结束,返回值为 : 
+2019-09-27 11:43:45.390  INFO 3276 --- [http-nio-8090-exec-6] c.e.d.a.LogAspectJ                       : 前置通知 : com.example.demo.service.impl.UserServiceImpl.getUser开始执行
+2019-09-27 11:43:45.390  INFO 3276 --- [http-nio-8090-exec-6] c.e.d.a.LogAspectJ                       : 参数列表 : []
+2019-09-27 11:43:45.390  INFO 3276 --- [http-nio-8090-exec-6] c.e.d.a.LogAspectJ                       : 请求类型 : GET
+2019-09-27 11:43:45.435  INFO 3276 --- [http-nio-8090-exec-6] c.e.d.a.LogAspectJ                       : 后置通知 : com.example.demo.service.impl.UserServiceImpl.getUser执行结束,返回值为 : [UserDto(username=TEST3, password=TEST3, id=d41818435ea54e32b8db9e210a9105b6), UserDto(username=TEST3, password=TEST3, id=25ae9e223ba34a8c887b7452b7a80b10), UserDto(username=TEST3, password=TEST3, id=b757f6dece394f5ba8e5269d08544ae8), UserDto(username=TEST3, password=TEST3, id=27352c712b2e4d8e9c94ede14d01a05c), UserDto(username=TEST3, password=TEST3, id=6407dee73e5d49a7958ee0ae47b62449), UserDto(username=TEST3, password=TEST3, id=03672fb0f5e248c1af59b4967ce93654), UserDto(username=TEST3, password=TEST3, id=1412c604715648238dc8972f45bae081), UserDto(username=TEST3, password=TEST3, id=8adfc71cc32c4bb39c79667a1178baed), UserDto(username=TEST3, password=TEST3, id=1be0f860ebce438f9ea4bcd360827ed8), UserDto(username=TEST3, password=TEST3, id=b8e0baccf76b48f8bde1292879bf9f5b), UserDto(username=汉字, password=密码, id=7228f031a79c4b7a91bbd6f7d2d3e3a5), UserDto(username=汉字, password=密码, id=e415b0ee29d84dc6ac8a473c43d0035d), UserDto(username=admin1, password=admin1, id=137fe8cc995a4feca983a86e0ef8f92b), UserDto(username=admin1, password=admin1, id=7a99e437ed5b432baafbeb0f4b709864), UserDto(username=admin1, password=admin1, id=d7d1094329654d049c5a7d637e209db5)]
+2019-09-27 11:45:32.968  INFO 3276 --- [http-nio-8090-exec-9] c.e.d.a.LogAspectJ                       : 前置通知 : com.example.demo.service.impl.UserServiceImpl.getUser开始执行
+2019-09-27 11:45:32.969  INFO 3276 --- [http-nio-8090-exec-9] c.e.d.a.LogAspectJ                       : 参数列表 : []
+2019-09-27 11:45:32.969  INFO 3276 --- [http-nio-8090-exec-9] c.e.d.a.LogAspectJ                       : 请求类型 : GET
+2019-09-27 11:45:32.972  INFO 3276 --- [http-nio-8090-exec-9] c.e.d.a.LogAspectJ                       : 后置通知 : com.example.demo.service.impl.UserServiceImpl.getUser执行结束,返回值为 : [UserDto(username=TEST3, password=TEST3, id=413b27386eca4cbbaa5aee89dfaab355), UserDto(username=TEST3, password=TEST3, id=c0f37688d21d449aaec047bc833a11c0), UserDto(username=TEST3, password=TEST3, id=0efc8f9cd71a49ca97f4bd37cb2846e6), UserDto(username=TEST3, password=TEST3, id=aab3c58c202241828dc2ee27a1b9b899), UserDto(username=TEST3, password=TEST3, id=b711fd18a9544f3ab0b9e6c80c25605d), UserDto(username=TEST3, password=TEST3, id=df6b40a396d948a8a013f7490f339190), UserDto(username=TEST3, password=TEST3, id=7a31de6b820f4bbfb0f1438efb5ad6e8), UserDto(username=TEST3, password=TEST3, id=2648f84034eb4bea8fa6f02833ee2950), UserDto(username=TEST3, password=TEST3, id=f18c35d2a45b437d8093f6981d8c90d4), UserDto(username=TEST3, password=TEST3, id=b9adcfc514034fd58bd0844ba2e86c83), UserDto(username=汉字, password=密码, id=3c4ef97ab44a44368200f405eeabe68c), UserDto(username=汉字, password=密码, id=22ada454f2e24c15a70f628a574e5e44), UserDto(username=admin1, password=admin1, id=75011c33512b4e7cb316adefa5342b6d), UserDto(username=admin1, password=admin1, id=f2782c5bd8f742dcb7638855d12e551c), UserDto(username=admin1, password=admin1, id=03e39bd1f72c494f8877435c0f1914de)]
+2019-09-27 11:46:26.519  INFO 3276 --- [RMI TCP Connection(33)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-09-27 11:46:26.522  INFO 3276 --- [RMI TCP Connection(33)-127.0.0.1] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-27 11:46:26.522  INFO 3276 --- [RMI TCP Connection(33)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2019-09-27 11:46:26.612  INFO 3276 --- [RMI TCP Connection(33)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
+2019-09-27 11:46:32.898  INFO 5056 --- [main] c.e.d.SpringBootDemo1Application         : Starting SpringBootDemo1Application on 白 with PID 5056 (D:\Program\Eclipse\eclipse.old\workSpace\springBootDemo\target\classes started by 10337 in D:\Program\Eclipse\eclipse.old\workSpace\springBootDemo)
+2019-09-27 11:46:32.903  INFO 5056 --- [main] c.e.d.SpringBootDemo1Application         : No active profile set, falling back to default profiles: default
+2019-09-27 11:46:33.962  INFO 5056 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8090 (http)
+2019-09-27 11:46:33.982  INFO 5056 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2019-09-27 11:46:33.983  INFO 5056 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.21]
+2019-09-27 11:46:34.059  INFO 5056 --- [main] o.a.c.c.C.[.[.[/demo]                    : Initializing Spring embedded WebApplicationContext
+2019-09-27 11:46:34.059  INFO 5056 --- [main] o.s.w.c.ContextLoader                    : Root WebApplicationContext: initialization completed in 1124 ms
+2019-09-27 11:46:51.926  INFO 5056 --- [main] o.s.s.c.ThreadPoolTaskExecutor           : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-27 11:46:52.275  INFO 5056 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8090 (http) with context path '/demo'
+2019-09-27 11:46:52.279  INFO 5056 --- [main] c.e.d.SpringBootDemo1Application         : Started SpringBootDemo1Application in 19.745 seconds (JVM running for 20.78)
+2019-09-27 11:46:57.776  INFO 5056 --- [http-nio-8090-exec-1] o.a.c.c.C.[.[.[/demo]                    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-27 11:46:57.776  INFO 5056 --- [http-nio-8090-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2019-09-27 11:46:57.789  INFO 5056 --- [http-nio-8090-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 13 ms
+2019-09-27 11:46:57.813  INFO 5056 --- [http-nio-8090-exec-1] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2019-09-27 11:46:57.816  WARN 5056 --- [http-nio-8090-exec-1] c.z.h.u.DriverDataSource                 : Registered driver with driverClassName=oracle.jdbc.driver.OracleDriver was not found, trying direct instantiation.
+2019-09-27 11:46:57.925  INFO 5056 --- [http-nio-8090-exec-1] c.z.h.p.PoolBase                         : HikariPool-1 - Driver does not support get/set network timeout for connections. (oracle.jdbc.driver.T4CConnection.getNetworkTimeout()I)
+2019-09-27 11:46:57.931  INFO 5056 --- [http-nio-8090-exec-1] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2019-09-27 11:46:57.939  INFO 5056 --- [http-nio-8090-exec-1] c.e.d.a.LogAspectJ                       : 前置通知 : com.example.demo.service.impl.UserServiceImpl.getUser开始执行
+2019-09-27 11:46:57.939  INFO 5056 --- [http-nio-8090-exec-1] c.e.d.a.LogAspectJ                       : 参数列表 : []
+2019-09-27 11:46:57.939  INFO 5056 --- [http-nio-8090-exec-1] c.e.d.a.LogAspectJ                       : 请求类型 : GET
+2019-09-27 11:47:44.816  INFO 5056 --- [http-nio-8090-exec-1] c.e.d.a.LogAspectJ                       : 后置通知 : com.example.demo.service.impl.UserServiceImpl.getUser执行结束,返回值为 : [UserDto(username=TEST3, password=TEST3, id=0909d6300b714f2ebfa712680b56e699), UserDto(username=TEST3, password=TEST3, id=9953b5e89d3e42e484a3657c0f6fc72b), UserDto(username=TEST3, password=TEST3, id=4c64b75ceb1d49a4b5d1fceca6f3f490), UserDto(username=TEST3, password=TEST3, id=dee00b28693e41ce90f4c5770fc71400), UserDto(username=TEST3, password=TEST3, id=5bb3b81400f745fd9371c2f5bf42088b), UserDto(username=TEST3, password=TEST3, id=6a5c787f061442ef93fcf8bc490a580b), UserDto(username=TEST3, password=TEST3, id=6c7fa49a1ef349c4b99efd3619e24efe), UserDto(username=TEST3, password=TEST3, id=6e2b12ed549b4d1c9fb267cd4f3b1c82), UserDto(username=TEST3, password=TEST3, id=218c092890e34087b9d821ee39b27462), UserDto(username=TEST3, password=TEST3, id=03a6550c5b9d402c816cf587f3963b52), UserDto(username=汉字, password=密码, id=5e64974e05124d75b207c223f9f72445), UserDto(username=汉字, password=密码, id=3c2c73a121c941649a4a04ba1484b87f), UserDto(username=admin1, password=admin1, id=0808a85095454deeae7f720c123e3f4f), UserDto(username=admin1, password=admin1, id=fe62ea3df07d46af812e0cd410c5fd26), UserDto(username=admin1, password=admin1, id=926cbbd8d6be44739d12181bb4bf234c)]
+2019-09-27 11:58:28.178  INFO 5056 --- [http-nio-8090-exec-4] c.e.d.a.LogAspectJ                       : 前置通知 : com.example.demo.service.impl.UserServiceImpl.getUser开始执行
+2019-09-27 11:58:28.178  INFO 5056 --- [http-nio-8090-exec-4] c.e.d.a.LogAspectJ                       : 参数列表 : []
+2019-09-27 11:58:28.178  INFO 5056 --- [http-nio-8090-exec-4] c.e.d.a.LogAspectJ                       : 请求类型 : GET
+2019-09-27 11:58:28.183  INFO 5056 --- [http-nio-8090-exec-4] c.e.d.a.LogAspectJ                       : 后置通知 : com.example.demo.service.impl.UserServiceImpl.getUser执行结束,返回值为 : [UserDto(username=TEST1, password=TEST3, id=095d462213414a6c81bff0f2a0a4e251), UserDto(username=TEST2, password=TEST3, id=69ef7d19bd764efb9339ee1421632df9), UserDto(username=TEST3, password=TEST3, id=d5dfb141a7d143a6bcdd404b537250f8), UserDto(username=TEST4, password=TEST3, id=7a27e33934bc43e799e659031f5a3d89), UserDto(username=TEST5, password=TEST3, id=e6062f65fabf4429a494186c5bb854ac), UserDto(username=TEST6, password=TEST3, id=79f8c56218ca4a53b098824f3e26bab3), UserDto(username=TEST7, password=TEST3, id=90f49d56380a4994a4d64e77fc607073), UserDto(username=TEST8, password=TEST3, id=ec5ad55f993943f186838ebaa489aa34), UserDto(username=TEST9, password=TEST3, id=686a8846906a4b45a438c091f6ffc39f), UserDto(username=TEST10, password=TEST3, id=9afaf98f3d064505aeb9dc736695e572), UserDto(username=汉字, password=密码, id=5aa51f11dcfd4b85aaca884e994a4fce)]
+2019-09-27 13:33:03.844  WARN 5056 --- [HikariPool-1 housekeeper] c.z.h.p.HikariPool                       : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=25m5s643ms712µs700ns).
+2019-09-27 14:17:29.820  INFO 5056 --- [RMI TCP Connection(281)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-09-27 14:17:29.825  INFO 5056 --- [RMI TCP Connection(281)-127.0.0.1] o.s.s.c.ThreadPoolTaskExecutor           : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-27 14:17:29.826  INFO 5056 --- [RMI TCP Connection(281)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown initiated...
+2019-09-27 14:17:30.049  INFO 5056 --- [RMI TCP Connection(281)-127.0.0.1] c.z.h.HikariDataSource                   : HikariPool-1 - Shutdown completed.
